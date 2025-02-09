@@ -57,8 +57,18 @@ sleep 1
 echo "✅ System fixed and upgraded!"
 sleep 1
 sleep 3
+echo "Enjoy Your day"
+clear
+sleep 2
+echo -e "\e[1;32m"
+echo "========================================="
+echo "   🚀 Kali Linux Fix & Upgrade Script  "
+echo "========================================="
+echo -e "\e[1;33mAuthor  : Lokesh Kumar"
+echo "YouTube : https://youtube.com/@termuxvibes"
+echo -e "\e[1;32m=========================================\e[0m"
+sleep 10
+echo "----------------------------------------"
+echo "bye bye"
+sleep 1
 
-
-# Redirect to YouTube channel
-echo "🔗 Redirecting to YouTube Channel..."
-xdg-open "https://youtube.com/@termuxvibes"
