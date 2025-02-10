@@ -74,6 +74,8 @@ echo "YouTube : https://youtube.com/@termuxvibes"
 echo -e "\e[1;32m=========================================\e[0m"
 sleep 10
 echo "----------------------------------------"
+sleep 3
 echo "bye bye"
-sleep 1
+sleep 3
+
 
