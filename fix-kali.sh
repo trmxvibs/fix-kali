@@ -37,6 +37,11 @@ else
     echo "✅ Files removed."
 fi
 clear
+echo "Installing Broken Packages"
+sleep 2
+apt --fix-broken install
+clear
+sleep 1
 echo "🔄 Fixing dpkg..."
 sleep 5 
 sudo dpkg --configure -a
