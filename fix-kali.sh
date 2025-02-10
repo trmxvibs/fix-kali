@@ -29,7 +29,7 @@ if [ ${#PROBLEM_FILES[@]} -eq 0 ]; then
 else
     echo "❌ Problematic files found:"
     printf '%s\n' "${PROBLEM_FILES[@]}"
-
+sleep 5
     echo "🗑 Removing problematic files..."
     for file in "${PROBLEM_FILES[@]}"; do
         sudo rm -f "/usr/bin/$file"
@@ -37,22 +37,22 @@ else
     echo "✅ Files removed."
 fi
 clear
-echo "Installing Broken Packages"
-sleep 2
+echo "🔄 Installing Broken Packages 🔄"
+sleep 5
 apt --fix-broken install
 clear
-sleep 1
-echo "🔄 Fixing dpkg..."
+sleep 5
+echo "🔄 Fixing dpkg...🔄"
 sleep 5 
 sudo dpkg --configure -a
-
+clear
 echo "🛠 Fixing and updating package lists..."
 sleep 5
 sudo apt-get clean
 sudo apt-get autoremove -y
 sudo apt-get update
 clear
-echo "📦 Upgrading Kali Linux..."
+echo "📦 Upgrading Kali Linux...🔄"
 sleep 10
 
 sudo apt-get full-upgrade -y
