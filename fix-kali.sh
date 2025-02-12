@@ -58,12 +58,17 @@ sleep 10
 sudo apt-get full-upgrade -y
 clear
 sleep 1
-
+echo "Clearing Unwanted Package And Moduels "
+sleep 2
+sudo apt-get clean
+sudo apt-get autoremove -y
+sudo apt-get update -y
+clear 
+sleep 1
 echo "✅ System fixed and upgraded!"
 sleep 1
 sleep 3
 echo "Enjoy Your day"
-clear
 sleep 2
 echo -e "\e[1;32m"
 echo "========================================="
