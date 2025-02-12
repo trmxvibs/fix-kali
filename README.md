@@ -33,4 +33,4 @@ This script automatically **finds and removes corrupted/cracked system files**, 
 ## 📚 Additional Information
 
 - Make sure you have the necessary permissions to execute the script.
-- For more tutorials, visit our [YouTube channel](https://www.youtube.com).
+- For more tutorials, visit our [YouTube channel](https://www.youtube.com/@termuxvibes).
