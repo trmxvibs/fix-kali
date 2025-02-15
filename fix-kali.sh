@@ -49,7 +49,7 @@ clear
 echo "🛠 Fixing and updating package lists..."
 sleep 5
 sudo apt-get clean
-sudo apt-get autoremove -y
+sudo apt autoremove -y
 sudo apt-get update
 clear
 echo "📦 Upgrading Kali Linux...🔄"
@@ -61,8 +61,15 @@ sleep 1
 echo "Clearing Unwanted Package And Moduels "
 sleep 2
 sudo apt-get clean
-sudo apt-get autoremove -y
+sudo apt autoremove -y
 sudo apt-get update -y
+cd $HOME
+sudo rm -rf /var/lib/postgresql/17
+sudo rm -rf /etc/postgresql/17
+sudo apt-get clean
+sudo apt autoremove -y
+sudo apt-get update -y
+sudo apt-get install postgresql-17
 clear 
 sleep 1
 echo "✅ System fixed and upgraded!"
