@@ -70,6 +70,7 @@ sudo apt-get clean
 sudo apt autoremove -y
 sudo apt-get update -y
 sudo apt-get install postgresql-17
+sudo apt upgrade kali-desktop-xfce
 clear 
 sleep 1
 echo "✅ System fixed and upgraded!"
